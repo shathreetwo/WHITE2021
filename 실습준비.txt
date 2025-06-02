@@ -1,0 +1,25 @@
+oracle virtual box 다운 받아서 가상머신 파일을 열었다. 
+오류 - > 
+
+원본: C:\Users\yuuki\GitProject\whitehatfile\Victim_Standalone\Victim\S1_Docs_Malware.ovf
+
+Storage for the medium 'C:\Users\yuuki\VirtualBox VMs\S1_Docs_Malware\S1_Docs_Malware-1.vdi' is not created.
+결과 코드:
+VBOX_E_INVALID_OBJECT_STATE (0x80bb0007)
+구성 요소: 
+ApplianceWrap
+인터페이스: 
+IAppliance {86a98347-7619-41aa-aece-b21ac5c1a7e6}
+
+가상머신 ovf 파일을 확인해봐도 vdi 참조는 없다. 
+가상머신 생성할때 옵션으로 vdi변환을 체크함. -> 해결됨.
+
+오류 -> 
+가상 머신 부팅이 실패했습니다. 운영 체제가 없거나 부팅 순서가 잘못되었을 수도 있습니다. 운영 체제 설치 DVD를 마운트하면 문제를 해결할 수도 있습니다. ISO 파일을 선택하면 이 대화 상자를 닫은 후 마운트를 시도합니다.
+
+안된다....
+
+화이트햇때 썼던 vm ware 사용 -> 성공. 
+
+안에 여러 파일이 들어있는 윈도우 가상머신이다. 
+모든 파일에.rabbit 확장자가 걸려있다. (랜섬웨어)
